@@ -1,7 +1,7 @@
 # java_ee
 Java EE или Java Enterprise Edition представляет платформу для создания корпоративных приложений на языке Java. <br />
 
-Текущий изученный урок:2 <br />
+Текущий изученный урок:3 <br />
 https://www.youtube.com/playlist?list=PLwwk4BHih4fjstwgKAHPAuUcjpRUiRh5k <br />
 
 Урок 01 - Java EE. Введение в J2EE <br />
@@ -97,3 +97,7 @@ https://www.youtube.com/playlist?list=PLwwk4BHih4fjstwgKAHPAuUcjpRUiRh5k <br />
 Урок 55 - Java EE. Перевод проекта на Maven <br />
 Урок 56 - Java EE. Развитие библиотеки <br />
 Урок 57 - Java EE. Ссылки, ресурсы <br />
+
+К уроку 3. Ссылка на спецификацию  <br />
+JSR для J2EE https://www.oracle.com/technetwork/java/javaee/tech/index.html  <br />
+Список всех JSR http://jcp.org/  <br />
