@@ -6,7 +6,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>SecondServlet</servlet-name>
-        <url-pattern>/SecondServlet</url-pattern>
+        <url-pattern>/testapp</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
