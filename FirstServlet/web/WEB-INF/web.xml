@@ -3,10 +3,14 @@
     <servlet>
         <servlet-name>SecondServlet</servlet-name>
         <servlet-class>servlet.SecondServlet</servlet-class>
+        <init-param>
+            <param-name>init1</param-name>
+            <param-value>value1</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>SecondServlet</servlet-name>
-        <url-pattern>/testapp</url-pattern>
+        <url-pattern>/SecondServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

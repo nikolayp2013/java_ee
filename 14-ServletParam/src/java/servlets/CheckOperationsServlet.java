@@ -1,38 +1,28 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package servlet;
+package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Enumeration;
-import javax.servlet.ServletConfig;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author perov
+ * @author Tim
  */
-public class SecondServlet extends HttpServlet {
-    
-    private int count;
-
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        super.init(config); //To change body of generated methods, choose Tools | Templates.
-        System.out.println(config.getInitParameter("init1"));
-    }
-    
-    
+public class CheckOperationsServlet extends HttpServlet {
 
     /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
+     * Processes requests for both HTTP
+     * <code>GET</code> and
+     * <code>POST</code> methods.
      *
      * @param request servlet request
      * @param response servlet response
@@ -42,36 +32,42 @@ public class SecondServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
-        Enumeration en = request.getParameterNames();
-        
-        count++;
-        
-        request.getSession().setAttribute("count", count);
-               
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
+        PrintWriter out = response.getWriter();
+        try {
+
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet SecondServlet</title>");            
+            out.println("<title>Servlet CheckAttributeServlet</title>");
             out.println("</head>");
             out.println("<body>");
-//            out.println("<h1>2223Servlet SecondServlet at " + request.getContextPath() + "</h1>");
-//            out.println("<h1> Param1=" + request.getParameter("p1") + "</h1>");
-            while(en.hasMoreElements()) {
-                String param = en.nextElement().toString();
-                out.println("<h1> Param " + param + " - " + request.getParameter(param) + "</h1>");
+
+
+            HttpSession session = request.getSession(true);
+
+            Object attr = session.getAttribute("formula");
+
+            if (attr instanceof ArrayList){
+                ArrayList list = (ArrayList) attr;
+                out.println("<h1>Список операций:</h1>");
+                for (Object str : list) {
+                    out.println("<h3>"+str+"</h3>");
+                }
+                
+            }else{
+                out.println("<h1>Операции не найдены</h1>");
             }
-            out.println("<h1> count=" + request.getSession().getAttribute("count") + "</h1>");
+
+        } finally {
             out.println("</body>");
             out.println("</html>");
+            out.close();
         }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
-     * Handles the HTTP <code>GET</code> method.
+     * Handles the HTTP
+     * <code>GET</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -85,7 +81,8 @@ public class SecondServlet extends HttpServlet {
     }
 
     /**
-     * Handles the HTTP <code>POST</code> method.
+     * Handles the HTTP
+     * <code>POST</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -107,5 +104,4 @@ public class SecondServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }
