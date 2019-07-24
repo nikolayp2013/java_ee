@@ -56,7 +56,8 @@ public class CalcServlet extends HttpServlet {
             HttpSession session = request.getSession(true);
             
             request.getServletContext().setAttribute("obj", new TestObject("TestName"));
-
+            
+            System.out.println(((TestObject)request.getServletContext().getAttribute("obj")).getName());
             
             // получение типа операции
             OperationType operType = OperationType.valueOf(opearation.toUpperCase());
