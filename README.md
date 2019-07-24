@@ -101,3 +101,5 @@ https://www.youtube.com/playlist?list=PLwwk4BHih4fjstwgKAHPAuUcjpRUiRh5k <br />
 К уроку 3. Ссылка на спецификацию  <br />
 JSR для J2EE https://www.oracle.com/technetwork/java/javaee/tech/index.html  <br />
 Список всех JSR http://jcp.org/  <br />
+
+К уроку 18. Для запуска монитора сервера HTTP Cntr + Shift + 5
