@@ -1,7 +1,7 @@
 # java_ee
 Java EE или Java Enterprise Edition представляет платформу для создания корпоративных приложений на языке Java. <br />
 
-Текущий изученный урок:22 <br />
+Текущий изученный урок:23 <br />
 https://www.youtube.com/playlist?list=PLwwk4BHih4fjstwgKAHPAuUcjpRUiRh5k <br />
 
 Урок 01 - Java EE. Введение в J2EE <br />
@@ -103,3 +103,5 @@ JSR для J2EE https://www.oracle.com/technetwork/java/javaee/tech/index.html  
 Список всех JSR http://jcp.org/  <br />
 
 К уроку 18. Для запуска монитора сервера HTTP Cntr + Shift + 5
+
+Все архивы с исходинками: https://sites.google.com/site/programming0862/java_ee
