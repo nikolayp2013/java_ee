@@ -42,32 +42,32 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Онлайн библиотека</title>\n");
-      out.write("        <link href=\"css/style_main.css\" rel=\"stylesheet\" type=\"text/css\">\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>Онлайн библиотека</title>\r\n");
+      out.write("        <link href=\"css/style_main.css\" rel=\"stylesheet\" type=\"text/css\">\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
       out.write("        ");
  request.setCharacterEncoding("UTF-8");
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
       out.print("Привет");
-      out.write("\n");
-      out.write("        <h3>\n");
+      out.write("\r\n");
+      out.write("        <h3>\r\n");
       out.write("            ");
       out.print(request.getParameter("username"));
-      out.write("\n");
-      out.write("        </h3>\n");
-      out.write("        <h3>\n");
+      out.write("\r\n");
+      out.write("        </h3>\r\n");
+      out.write("        <h3>\r\n");
       out.write("            ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${param[\"password\"]}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("\n");
-      out.write("        </h3>\n");
+      out.write("\r\n");
+      out.write("        </h3>\r\n");
       out.write("        ");
 
 
@@ -75,9 +75,9 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
         tc.check();
                
 
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
