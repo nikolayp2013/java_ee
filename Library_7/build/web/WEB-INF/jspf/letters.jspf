@@ -1,0 +1,13 @@
+
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="letters">
+    <jsp:useBean id="letterList" class="ru.javabegin.training.web.beans.LetterList" scope="application"/>
+    <%
+        char[] letters = letterList.getRussianLetters();
+        for (int i = 0; i < letters.length; i++) {
+    %>
+    <a  href="books.jsp?letter=<%=letters[i]%>"><%=letters[i]%></a>
+    <%
+        }%>
+</div>

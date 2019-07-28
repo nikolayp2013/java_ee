@@ -1,0 +1,15 @@
+<%@page import="ru.javabegin.training.web.beans.Genre"%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="sidebar1">
+    <h4>Жанры:</h4>
+    <ul class="nav">
+        <jsp:useBean id="genreList" class="ru.javabegin.training.web.beans.GenreList" scope="application"/>
+        <li><a href="books.jsp?genre_id=0">Все книги</a></li>
+        <%
+            for (Genre genre : genreList.getGenreList()) {
+        %>
+        <li><a href="books.jsp?genre_id=<%=genre.getId()%>"><%=genre.getName()%></a></li>
+
+        <%}%>
+    </ul>
+</div>
