@@ -3,7 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/my_projects/java_ee/Library_3/web/WEB-INF/web.xml</file>
+            <file>file:/D:/my_projects/java_ee/Library_3/src/java/ru/javabegin/training/web/beans/AuthorList.java</file>
+            <file>file:/D:/my_projects/java_ee/Library_3/src/java/ru/javabegin/training/web/db/Database.java</file>
+            <file>file:/D:/my_projects/java_ee/Library_3/web/css/style_main.css</file>
+            <file>file:/D:/my_projects/java_ee/Library_3/web/pages/main.jsp</file>
+            <file>file:/D:/my_projects/java_ee/Library_3/src/java/ru/javabegin/training/web/beans/Author.java</file>
         </group>
     </open-files>
 </project-private>

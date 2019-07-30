@@ -50,15 +50,15 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Онлайн библиотека</title>\n");
-      out.write("        <link href=\"../css/style_main.css\" rel=\"stylesheet\" type=\"text/css\">\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>Онлайн библиотека</title>\r\n");
+      out.write("        <link href=\"../css/style_main.css\" rel=\"stylesheet\" type=\"text/css\">\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
       out.write("        ");
 
 
@@ -79,47 +79,47 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
             }
 
         
-      out.write("\n");
-      out.write("\n");
-      out.write("        <div class=\"container\">\n");
-      out.write("\n");
-      out.write("            <div class=\"header\">\n");
-      out.write("                <div class=\"logo\">\n");
-      out.write("                    <a href=\"main.jsp\"><img src=\"../images/library.png\" alt=\"Логотип\" name=\"logo\" /></a>\n");
-      out.write("\n");
-      out.write("                </div>\n");
-      out.write("                <div class=\"descr\">\n");
-      out.write("                    <h3>Онлайн библиотека проекта javabegin.ru <br/> Все книги - в электронном виде!</h3>\n");
-      out.write("\n");
-      out.write("                </div>\n");
-      out.write("                <div class=\"welcome\">\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("        <div class=\"container\">\r\n");
+      out.write("\r\n");
+      out.write("            <div class=\"header\">\r\n");
+      out.write("                <div class=\"logo\">\r\n");
+      out.write("                    <a href=\"main.jsp\"><img src=\"../images/library.png\" alt=\"Логотип\" name=\"logo\" /></a>\r\n");
+      out.write("\r\n");
+      out.write("                </div>\r\n");
+      out.write("                <div class=\"descr\">\r\n");
+      out.write("                    <h3>Онлайн библиотека проекта javabegin.ru <br/> Все книги - в электронном виде!</h3>\r\n");
+      out.write("\r\n");
+      out.write("                </div>\r\n");
+      out.write("                <div class=\"welcome\">\r\n");
       out.write("                    <h5>Добро пожаловать, ");
       out.print(session.getAttribute("username"));
-      out.write(" !</h5>\n");
-      out.write("                    <h6><a href=\"../index.jsp\">Выход</a></h6>\n");
-      out.write("                            </div>\n");
-      out.write("                            <div class=\"search_form\">\n");
-      out.write("                                <form name=\"search_form\" method=\"GET\" action=\"books.jsp\">\n");
+      out.write(" !</h5>\r\n");
+      out.write("                    <h6><a href=\"../index.jsp\">Выход</a></h6>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                            <div class=\"search_form\">\r\n");
+      out.write("                                <form name=\"search_form\" method=\"GET\" action=\"books.jsp\">\r\n");
       out.write("                                    <input type=\"text\" name=\"search_string\" value=\"");
       out.print(searchString);
-      out.write("\" size=\"110\"/>\n");
-      out.write("                                    <input class=\"search_button\" type=\"submit\" value=\"Поиск\"/>\n");
-      out.write("                                    <select name=\"search_option\">\n");
-      out.write("                                        <option>Название</option>\n");
-      out.write("                                        <option>Автор</option>\n");
-      out.write("                                    </select>\n");
-      out.write("                                </form>\n");
-      out.write("                            </div>\n");
+      out.write("\" size=\"110\"/>\r\n");
+      out.write("                                    <input class=\"search_button\" type=\"submit\" value=\"Поиск\"/>\r\n");
+      out.write("                                    <select name=\"search_option\">\r\n");
+      out.write("                                        <option>Название</option>\r\n");
+      out.write("                                        <option>Автор</option>\r\n");
+      out.write("                                    </select>\r\n");
+      out.write("                                </form>\r\n");
+      out.write("                            </div>\r\n");
       out.write("                            </div>");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("\n");
-      out.write("           \n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<div class=\"sidebar1\">\n");
-      out.write("    <h4>Жанры:</h4>\n");
-      out.write("    <ul class=\"nav\">\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("\r\n");
+      out.write("           \r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<div class=\"sidebar1\">\r\n");
+      out.write("    <h4>Жанры:</h4>\r\n");
+      out.write("    <ul class=\"nav\">\r\n");
       out.write("        ");
       ru.javabegin.training.web.beans.GenreList genreList = null;
       synchronized (application) {
@@ -129,8 +129,8 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("genreList", genreList, PageContext.APPLICATION_SCOPE);
         }
       }
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("        ");
 
 
@@ -147,47 +147,47 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
             session.setAttribute("genreId", selectedGenreId);
 
         
-      out.write("\n");
-      out.write("\n");
-      out.write("        <li><a href=\"books.jsp?genre_id=0\">Все книги</a></li>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("        <li><a href=\"books.jsp?genre_id=0\">Все книги</a></li>\r\n");
       out.write("        ");
 
             for (Genre genre : genreList.getGenreList()) {
                 if (selectedGenreId != 0 && selectedGenreId == genre.getId()) {
         
-      out.write("\n");
+      out.write("\r\n");
       out.write(" <li><a style=\"color:red;\" href=\"books.jsp?genre_id=");
       out.print(genre.getId());
       out.write('"');
       out.write('>');
       out.print(genre.getName());
-      out.write("</a></li>\n");
+      out.write("</a></li>\r\n");
       out.write("        ");
         } else {
                     
         
-      out.write("\n");
+      out.write("\r\n");
       out.write(" <li><a href=\"books.jsp?genre_id=");
       out.print(genre.getId());
       out.write('"');
       out.write('>');
       out.print(genre.getName());
-      out.write("</a></li>\n");
+      out.write("</a></li>\r\n");
       out.write("        ");
                 }
             }
 
         
-      out.write("\n");
-      out.write("\n");
-      out.write("    </ul>\n");
-      out.write("</div>\n");
-      out.write("\n");
-      out.write("           \n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<div class=\"letters\">\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    </ul>\r\n");
+      out.write("</div>\r\n");
+      out.write("\r\n");
+      out.write("           \r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<div class=\"letters\">\r\n");
       out.write("    ");
       ru.javabegin.training.web.beans.LetterList letterList = null;
       synchronized (application) {
@@ -197,7 +197,7 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("letterList", letterList, PageContext.APPLICATION_SCOPE);
         }
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("    ");
 
 
@@ -218,47 +218,47 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
             if (searchLetter != null && searchLetter.toString().toUpperCase().charAt(0) == letters[i]) {
 
     
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("    <a style=\"color:red;\" href=\"books.jsp?letter=");
       out.print(letters[i]);
       out.write('"');
       out.write('>');
       out.print(letters[i]);
-      out.write("</a>\n");
+      out.write("</a>\r\n");
       out.write("    ");
 
     } else {
     
-      out.write("\n");
+      out.write("\r\n");
       out.write("    <a  href=\"books.jsp?letter=");
       out.print(letters[i]);
       out.write('"');
       out.write('>');
       out.print(letters[i]);
-      out.write("</a>\n");
+      out.write("</a>\r\n");
       out.write("    ");
 
             }
         }
-      out.write("\n");
-      out.write("</div>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<div style=\"float:left; margin-top: 20px;\">\n");
-      out.write("<h3>Выберите раздел или используйте поиск книги</h3>\n");
+      out.write("\r\n");
+      out.write("</div>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<div style=\"float:left; margin-top: 20px;\">\r\n");
+      out.write("<h3>Выберите раздел или используйте поиск книги</h3>\r\n");
       out.write("      </div>");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<div style=\"clear: both; width:1100px;\">&nbsp;</div>\n");
-      out.write("  </div><!-- end .container -->\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("</body>\n");
-      out.write("</html>\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<div style=\"clear: both; width:1100px;\">&nbsp;</div>\r\n");
+      out.write("  </div><!-- end .container -->\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
