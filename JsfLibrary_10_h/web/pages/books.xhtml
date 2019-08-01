@@ -142,7 +142,10 @@
 
                         <h:column>       
 
-                            <h:selectBooleanCheckbox value="#{b.edit}" rendered="#{!bookListController.editMode}"/>                              
+                            <h:selectBooleanCheckbox value="#{b.edit}" rendered="#{!bookListController.editMode}">
+                                <!--<f:ajax event="change"/>-->
+                            </h:selectBooleanCheckbo>
+     
                         </h:column>
 
 
