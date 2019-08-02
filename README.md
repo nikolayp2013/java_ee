@@ -1,7 +1,7 @@
 # java_ee
 Java EE или Java Enterprise Edition представляет платформу для создания корпоративных приложений на языке Java. <br />
 
-Текущий изученный урок:43.1 <br />
+Текущий изученный урок:43.2 <br />
 https://www.youtube.com/playlist?list=PLwwk4BHih4fjstwgKAHPAuUcjpRUiRh5k <br />
 https://www.youtube.com/watch?v=vbDFuFfNV2A <br />
 https://www.youtube.com/watch?v=pNx9oZbnrLU <br />
@@ -107,3 +107,8 @@ JSR для J2EE https://www.oracle.com/technetwork/java/javaee/tech/index.html  
 К уроку 18. Для запуска монитора сервера HTTP Cntr + Shift + 5
 
 Все архивы с исходинками: https://sites.google.com/site/programming0862/java_ee
+
+Ошибка в проекте JsfLibrary_14_h
+dataHelper.java
+было 			Integer total = (Integer) criteria.add(criterion).setProjection(Projections.rowCount()).uniqueResult();
+исправить на 	Integer total = ((Number) criteria.add(criterion).setProjection(Projections.rowCount()).uniqueResult()).intValue();
