@@ -1,7 +1,7 @@
 # java_ee
 Java EE или Java Enterprise Edition представляет платформу для создания корпоративных приложений на языке Java. <br />
 
-Текущий изученный урок:53.1 <br />
+Текущий изученный урок:53.2 <br />
 https://www.youtube.com/playlist?list=PLwwk4BHih4fjstwgKAHPAuUcjpRUiRh5k <br />
 https://www.youtube.com/watch?v=vbDFuFfNV2A <br />
 https://www.youtube.com/watch?v=pNx9oZbnrLU <br />
