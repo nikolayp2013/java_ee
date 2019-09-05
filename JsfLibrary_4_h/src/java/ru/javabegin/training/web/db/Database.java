@@ -17,7 +17,7 @@ public class Database {
     public static Connection getConnection() {
         try {
             ic = new InitialContext();
-            ds = (DataSource) ic.lookup("java:comp/env/jdbc/Library");
+            ds = (DataSource) ic.lookup("jdbc/Library");
             conn = ds.getConnection();
         } catch (SQLException ex) {
             Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
