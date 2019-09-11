@@ -9,7 +9,8 @@
 
     <application>
         <locale-config>
-            <default-locale>ru_ru</default-locale>
+            <default-locale>ru</default-locale>
+            <supported-locale>en</supported-locale>
         </locale-config>
         <resource-bundle>
             <base-name>ru.javabegin.training.web.nls.messages</base-name>

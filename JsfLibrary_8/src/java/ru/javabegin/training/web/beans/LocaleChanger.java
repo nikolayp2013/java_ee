@@ -21,7 +21,7 @@ public class LocaleChanger implements Serializable {
 
     public Locale getCurrentLocale() {
         return currentLocale;
-    }
 
+    }
 
 }
