@@ -32,7 +32,7 @@ public class BookListController implements Serializable {
     private String currentSqlNoLimit;// последний выполнный sql без добавления limit
     // для постраничности----
     private boolean pageSelected;
-    private int booksCountOnPegh = 2;// кол-во отображаемых книг на 1 странице
+    private int booksCountOnPegh = 5;// кол-во отображаемых книг на 1 странице
     private long selectedPageNumber = 1; // выбранный номер страницы в постраничной навигации
     private long totalBooksCount; // общее кол-во книг (не на текущей странице, а всего), нажно для постраничности
     //-------

@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/my_projects/java_ee/JsfLibrary_13/web/WEB-INF/glassfish-web.xml</file>
-            <file>file:/C:/my_projects/java_ee/JsfLibrary_13/web/index.xhtml</file>
-            <file>file:/C:/my_projects/java_ee/JsfLibrary_13/web/resources/js/library.js</file>
-            <file>file:/C:/my_projects/java_ee/JsfLibrary_13/src/java/ru/javabegin/training/web/controllers/LoginController.java</file>
-            <file>file:/C:/my_projects/java_ee/JsfLibrary_13/src/java/ru/javabegin/training/web/beans/User.java</file>
-            <file>file:/C:/my_projects/java_ee/JsfLibrary_13/web/pages/books.xhtml</file>
-            <file>file:/C:/my_projects/java_ee/JsfLibrary_13/web/WEB-INF/web.xml</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

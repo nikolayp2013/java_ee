@@ -29,10 +29,11 @@ public class BookListController implements Serializable {
     private long selectedPageNumber = 1; // выбранный номер страницы в постраничной навигации
     private long totalBooksCount; // общее кол-во книг (не на текущей странице, а всего), нажно для постраничности
     private ArrayList<Integer> pageNumbers = new ArrayList<Integer>(); // общее кол-во книг (не на текущей странице, а всего), нажно для постраничности
-    private SearchType searchType;// хранит выбранный тип поиска
+    private SearchType searchType = SearchType.TITLE;// хранит выбранный тип поиска
     private String searchString; // хранит поисковую строку
     private ArrayList<Book> currentBookList; // текущий список книг для отображения
     private String currentSql;// последний выполнный sql без добавления limit
+    
 
     public BookListController() {
         fillBooksAll();
@@ -71,6 +72,8 @@ public class BookListController implements Serializable {
                 sqlBuilder.append(" limit ").append(selectedPageNumber * booksOnPage - booksOnPage).append(",").append(booksOnPage);
             }
 
+            //System.out.println(sqlBuilder.toString());
+            
             rs = stmt.executeQuery(sqlBuilder.toString());
 
             currentBookList = new ArrayList<Book>();
