@@ -3,6 +3,7 @@ package ru.javabegin.training.web.models;
 import java.util.List;
 import java.util.Map;
 import org.primefaces.model.LazyDataModel;
+import org.primefaces.model.SortMeta;
 import org.primefaces.model.SortOrder;  
 import ru.javabegin.training.web.beans.Pager;
 import ru.javabegin.training.web.db.DataHelper;
@@ -19,9 +20,7 @@ public class BookListDataModel extends LazyDataModel<Book> {
         
     }
     
-    
-
-      
+         
     @Override  
     public Book getRowData(String rowKey) {      
         
@@ -39,8 +38,38 @@ public class BookListDataModel extends LazyDataModel<Book> {
     }  
 
   
-    @Override  
-    public List<Book> load(int first, int pageSize, String sortField, SortOrder sortOrder, Map<String,String> filters) {   
+//    @Override  
+//    public List<Book> load(int first, int pageSize, String sortField, SortOrder sortOrder, Map<String,String> filters) {   
+//        
+//        pager.setFrom(first);
+//        pager.setTo(pageSize);
+//     
+//        dataHelper.populateList();
+//
+//        this.setRowCount(pager.getTotalBooksCount());  
+//        
+//        return pager.getList();
+//        
+//    } 
+
+    @Override
+    public List<Book> load(int first, int pageSize, String sortField, SortOrder sortOrder, Map<String, Object> filters) {
+//        return super.load(first, pageSize, sortField, sortOrder, filters); //To change body of generated methods, choose Tools | Templates.
+
+        pager.setFrom(first);
+        pager.setTo(pageSize);
+     
+        dataHelper.populateList();
+
+        this.setRowCount(pager.getTotalBooksCount());  
+        
+        return pager.getList();
+
+    }
+
+    @Override
+    public List<Book> load(int first, int pageSize, List<SortMeta> multiSortMeta, Map<String, Object> filters) {
+//        return super.load(first, pageSize, multiSortMeta, filters); //To change body of generated methods, choose Tools | Templates.
         
         pager.setFrom(first);
         pager.setTo(pageSize);
@@ -50,6 +79,10 @@ public class BookListDataModel extends LazyDataModel<Book> {
         this.setRowCount(pager.getTotalBooksCount());  
         
         return pager.getList();
-        
-    }  
+
+    }
+    
+    
+    
+    
 }  

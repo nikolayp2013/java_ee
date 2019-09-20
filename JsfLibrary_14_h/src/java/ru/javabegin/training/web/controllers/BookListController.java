@@ -108,6 +108,7 @@ public class BookListController implements Serializable {
     }
 
     public void cancelEditMode() {
+        row=-1;
         editModeView = false;
         for (Book book : pager.getList()) {
             book.setEdit(false);
@@ -171,6 +172,10 @@ public class BookListController implements Serializable {
     public int getRow() {
         row += 1;
         return row;
+    }
+    
+    public void setRow(int row) {
+        this.row = row;
     }
 
     public long getSelectedGenreId() {

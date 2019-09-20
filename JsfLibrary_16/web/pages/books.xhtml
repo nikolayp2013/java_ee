@@ -61,7 +61,7 @@
 
                             
                             <h:outputLink styleClass="content_link" value="#{request.contextPath}/PdfContent"  target="_blank">                                                             
-                                <h:graphicImage  value="/ShowImage?index=#{bookListController.pager.rowIndex}" width="160" height="220"/>
+                                <h:graphicImage  value="/ShowImage?index=#{bookListController.pager.rowIndex}&amp;t=#{now.time}" width="160" height="220"/>
                                 <f:param name="id" value="#{b.id}"/>
                             </h:outputLink> 
 

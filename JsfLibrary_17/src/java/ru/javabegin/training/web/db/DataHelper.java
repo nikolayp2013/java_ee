@@ -132,7 +132,7 @@ public class DataHelper {
 
     private void runCountCriteria() {
         Criteria criteria = booksCountCriteria.getExecutableCriteria(getSession());
-        Integer total = ((Number) criteria.setProjection(Projections.rowCount()).uniqueResult()).intValue();
+        Integer total = (Integer) criteria.setProjection(Projections.rowCount()).uniqueResult();
         pager.setTotalBooksCount(total);
     }
 
