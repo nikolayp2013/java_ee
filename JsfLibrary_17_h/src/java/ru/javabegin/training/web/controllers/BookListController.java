@@ -3,7 +3,6 @@ package ru.javabegin.training.web.controllers;
 import java.io.Serializable;
 import java.util.Map;
 import java.util.ResourceBundle;
-//import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -11,6 +10,7 @@ import javax.faces.context.FacesContext;
 import javax.faces.event.ValueChangeEvent;
 import org.primefaces.PrimeFaces;
 import org.primefaces.component.datatable.DataTable;
+//import org.primefaces.context.RequestContext;
 import org.primefaces.model.LazyDataModel;
 import ru.javabegin.training.web.beans.Pager;
 import ru.javabegin.training.web.db.DataHelper;
@@ -93,8 +93,7 @@ public class BookListController implements Serializable {
         cancelEditMode();
         dataHelper.populateList();
 
-        //RequestContext.getCurrentInstance().execute("dlgEditBook.hide()");
-        //PrimeFaces.current().executeScript("window.open('myUrl');");
+//        RequestContext.getCurrentInstance().execute("dlgEditBook.hide()");
         PrimeFaces.current().executeScript("PF('dlgEditBook').hide();");
 
         ResourceBundle bundle = ResourceBundle.getBundle("ru.javabegin.training.web.nls.messages", FacesContext.getCurrentInstance().getViewRoot().getLocale());
@@ -121,7 +120,6 @@ public class BookListController implements Serializable {
     public void cancelEditMode() {
         editModeView = false;
         //RequestContext.getCurrentInstance().execute("dlgEditBook.hide()");
-//        System.out.println("cancelEditMode");
         PrimeFaces.current().executeScript("PF('dlgEditBook').hide();");
 
     }
@@ -130,8 +128,6 @@ public class BookListController implements Serializable {
         editModeView = true;
         //RequestContext.getCurrentInstance().execute("dlgEditBook.show()");
         PrimeFaces.current().executeScript("PF('dlgEditBook').show();");
-//        System.out.println("switchEditMode");
-//        System.out.println(editModeView);
 
     }
 

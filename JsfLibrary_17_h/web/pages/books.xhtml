@@ -83,9 +83,9 @@
 
                             <strong>#{msg.descr} </strong>
 
-                            
+
                             <p:panel >
-<!--                                <p:inputTextarea id="inputDescr" value="#{bookListController.selectedBook.descr}" cols="60" rows="20" maxlength="1500" counter="counter" counterTemplate="#{msg.letters_left} {0}"/>-->
+                                <!--<p:inputTextarea id="inputDescr" value="#{bookListController.selectedBook.descr}" cols="60" rows="20" maxlength="1500" counter="counter" counterTemplate="#{msg.letters_left} {0}"/>-->
                                 <h:outputText id="counter" />  
                             </p:panel>
 
@@ -214,7 +214,7 @@
                             </p:commandLink> 
 
 
-                            <p:commandLink title="#{msg.delete_book}" type="button" onclick="PF('dlgDeleteBook').show();" >  
+                            <p:commandLink title="#{msg.delete_book}" type="button" onclick="dlgDeleteBook.show()" >  
                                 <h:graphicImage library="images" name="delete.gif" />
                                 <f:setPropertyActionListener value="#{b}"  target="#{bookListController.selectedBook}" /> 
                             </p:commandLink> 
@@ -231,8 +231,8 @@
 
                     <p:confirmDialog widgetVar="dlgDeleteBook" header="#{msg.confirm}" message="#{msg.delete_confirm}?" width="300px" styleClass="dialog_delete">    
                         <h:panelGrid columns="2" style="margin:0 auto; width:150px;">
-                            <p:commandButton id="btnDeletedBook" value="#{msg.yes}" action="#{bookListController.deleteBook}" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" update=":booksForm:booksList :booksCount :growlMessage" onclick="PF('dlgDeleteBook').hide();"/>  
-                            <p:commandButton value="#{msg.no}" styleClass="ui-confirmdialog-no" icon="ui-icon-close" onclick="PF('dlgDeleteBook').hide();" type="button"/>       
+                            <p:commandButton id="btnDeletedBook" value="#{msg.yes}" action="#{bookListController.deleteBook}" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" update=":booksForm:booksList :booksCount :growlMessage" onclick="dlgDeleteBook.hide()"/>  
+                            <p:commandButton value="#{msg.no}" styleClass="ui-confirmdialog-no" icon="ui-icon-close" onclick="dlgDeleteBook.hide()" type="button"/>       
                         </h:panelGrid>
                     </p:confirmDialog>  
 
