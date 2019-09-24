@@ -112,3 +112,5 @@ JSR для J2EE https://www.oracle.com/technetwork/java/javaee/tech/index.html  
 dataHelper.java
 было 			Integer total = (Integer) criteria.add(criterion).setProjection(Projections.rowCount()).uniqueResult();
 исправить на 	Integer total = ((Number) criteria.add(criterion).setProjection(Projections.rowCount()).uniqueResult()).intValue();
+
+Primefaces Showcase - https://www.primefaces.org/showcase/

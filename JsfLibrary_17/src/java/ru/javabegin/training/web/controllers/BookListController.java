@@ -6,7 +6,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ValueChangeEvent;
-import org.primefaces.context.RequestContext;
+//import org.primefaces.context.RequestContext;
 import org.primefaces.model.LazyDataModel;
 import ru.javabegin.training.web.beans.Pager;
 import ru.javabegin.training.web.db.DataHelper;
