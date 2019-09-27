@@ -6,8 +6,8 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ValueChangeEvent;
+import org.primefaces.PrimeFaces;
 import org.primefaces.component.datagrid.DataGrid;
-import org.primefaces.context.RequestContext;
 import org.primefaces.model.LazyDataModel;
 import ru.javabegin.training.web.beans.Pager;
 import ru.javabegin.training.web.db.DataHelper;
@@ -156,14 +156,16 @@ public class BookListController implements Serializable {
     //<editor-fold defaultstate="collapsed" desc="режим редактирования">
     public void switchEditMode() {
         editMode = true;
-        RequestContext.getCurrentInstance().execute("dlgEditBook.show()");
+        //RequestContext.getCurrentInstance().execute("dlgEditBook.show()");
+        PrimeFaces.current().executeScript("PF('dlgEditBook').show();");
 
     }
 
     public void switchAddMode() {
         addMode = true;
         selectedBook = new BookExt();
-        RequestContext.getCurrentInstance().execute("dlgEditBook.show()");
+        //RequestContext.getCurrentInstance().execute("dlgEditBook.show()");
+        PrimeFaces.current().executeScript("PF('dlgEditBook').show();");
 
     }
     
@@ -183,7 +185,8 @@ public class BookListController implements Serializable {
             selectedBook.setUploadedImage(null);
         }
 
-        RequestContext.getCurrentInstance().execute("dlgEditBook.hide()");
+        //RequestContext.getCurrentInstance().execute("dlgEditBook.hide()");
+        PrimeFaces.current().executeScript("PF('dlgEditBook').hide();");
     }
 
     //</editor-fold>

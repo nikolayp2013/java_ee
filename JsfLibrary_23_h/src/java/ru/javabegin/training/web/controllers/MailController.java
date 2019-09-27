@@ -17,7 +17,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import org.primefaces.context.RequestContext;
+import org.primefaces.PrimeFaces;
 
 @RequestScoped
 @ManagedBean
@@ -96,11 +96,13 @@ public class MailController {
     }
 
     public void showMailForm() {
-        RequestContext.getCurrentInstance().execute("dlgSendMail.show()");
+        //RequestContext.getCurrentInstance().execute("dlgSendMail.show()");
+        PrimeFaces.current().executeScript("PF('dlgEditBook').show();");
     }
 
 
     public void hideMailForm() {
-        RequestContext.getCurrentInstance().execute("dlgSendMail.hide()");
+        //RequestContext.getCurrentInstance().execute("dlgSendMail.hide()");
+        PrimeFaces.current().executeScript("PF('dlgEditBook').show();");
     }
 }

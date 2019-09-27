@@ -114,3 +114,5 @@ dataHelper.java
 исправить на 	Integer total = ((Number) criteria.add(criterion).setProjection(Projections.rowCount()).uniqueResult()).intValue();
 
 Primefaces Showcase - https://www.primefaces.org/showcase/
+
+Полезная информация по JAVA http://java-online.ru/jsf-lifecycle.xhtml
